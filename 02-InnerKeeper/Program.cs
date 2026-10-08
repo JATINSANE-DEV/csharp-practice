@@ -29,7 +29,6 @@ REQUIREMENTS:
 
 
 
-string? name = Console.ReadLine();
 Console.WriteLine("For how many nights you want to stay?");
 int nights = Convert.ToInt32(Console.ReadLine());
 
@@ -60,7 +59,7 @@ switch(choice)
     break;
 
     default:
-    Console.WriteLine("Invalid Room Choice");
+    Console.WriteLine("Invalid Room Choice!");
     return;
 }
 
@@ -70,10 +69,10 @@ if(nights >= 3)
 {
     baseCost*=0.9;
 }
-Console.WriteLine("Did you checkout late?");
+Console.WriteLine("Did you checkout late?(yes/no)");
 string? late = Console.ReadLine();
 if(late?.ToLower() == "yes")
 {
     baseCost+=15;
 }
-Console.WriteLine($"Traveler, your final bill for [{room}] ({nights} nights) is {baseCost} gold.");
+Console.WriteLine($"Traveler, your final bill for {room} ({nights} nights) is {baseCost} gold.");
