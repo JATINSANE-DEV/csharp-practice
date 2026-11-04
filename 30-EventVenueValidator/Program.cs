@@ -31,6 +31,6 @@ else
 double totalBillExact = Math.Round(subtotal+surchargeAmount, 2);
 int finalBillRounded = (int)totalBillExact;
 
-Console.WriteLine($"Subtotal Cost      : {subtotal}");
+Console.WriteLine($"Subtotal Cost      : ₹{subtotal}");
 Console.WriteLine($"Total Bill Exact   : ₹{totalBillExact}");
 Console.WriteLine($"Total Bill Rounded : ₹{finalBillRounded}");
