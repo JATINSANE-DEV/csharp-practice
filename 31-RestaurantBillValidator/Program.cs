@@ -1,4 +1,4 @@
-﻿double[] itemPrices = {350.0, 188.0, 420.0, 150.0};
+﻿double[] itemsPrices = {350.0, 188.0, 420.0, 150.0};
 double gstRate = 0.05;
 double serviceChargeRate = 0.10;
 double serviceChargeThreshold = 1000.0;
@@ -7,7 +7,7 @@ Console.WriteLine("<---Restaurant Order Items--->");
 double subtotal = 0.0;
 int itemIndex = 1;
 
-foreach (double price in itemPrices)
+foreach (double price in itemsPrices)
 {
     Console.WriteLine($"Item {itemIndex} Price : ₹{price}");
     subtotal+=price;
