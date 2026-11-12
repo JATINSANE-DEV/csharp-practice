@@ -19,13 +19,13 @@ Console.WriteLine($"Total Base Loot : {totalBaseLoot} Gold");
 
 double bonusAmount = isHardcoreMode ? (totalBaseLoot*hardCoreBonusRate) : 0.0;
 Console.WriteLine(isHardcoreMode
-? $"Hardcore Bonus  : +{bonusAmount} Gold (15% Extra)"
+? $"Hardcore Bonus  : +{bonusAmount} Gold ({hardCoreBonusRate*100}%)"
 : "Hardcore Bonus : 0 Gold (Normal Mode)");
 
-Console.WriteLine("-------------------------------");
+Console.WriteLine("-----------------------------------");
 
 double totalExactGold = Math.Round(totalBaseLoot + bonusAmount, 2);
 int finalGoldCoins = (int)totalExactGold;
 
 Console.WriteLine($"Total Exact Gold : {totalExactGold} Gold");
-Console.WriteLine($"Final Gold Coins : {finalGoldCoins} Gold");
+Console.WriteLine($"Final Gold Coins : {finalGoldCoins} Coins");
