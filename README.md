@@ -14,5 +14,5 @@ dotnet run
 Or run it from the repo root without changing folders:
 
 ```bash
-dotnet run --project 11-BuyingInventory
+dotnet run --project 11-LevelUpCheck
 ```
