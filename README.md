@@ -2,7 +2,7 @@
 Extra practice problems that I solve while learning C#.
 ## How to run
 
-Requires the [.NET SDK](https://dotnet.microsoft.com/download).
+Requires the [.NET SDK](https://dotnet.microsoft.com/download)
 
 Each folder is a separate console project. Pick one and run it:
 
